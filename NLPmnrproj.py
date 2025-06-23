@@ -75,9 +75,10 @@ else:
 # Custom header
 st.markdown("""
 <div class="custom-header">
-    🚀 NLP Project: Porter Stemmer Visualization
+    &#128640; NLP Project: Porter Stemmer Visualization
 </div>
 """, unsafe_allow_html=True)
+
 
 
 
