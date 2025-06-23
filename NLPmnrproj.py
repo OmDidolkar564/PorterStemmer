@@ -46,6 +46,26 @@ div.stButton > button:first-child:hover {
 </style>
 
 <div class="custom-header">
+
+# === Theme Toggle ===
+mode = st.selectbox("🌓 Choose Theme", ["🌞 Light", "🌙 Dark"], index=0)
+
+if "Dark" in mode:
+    st.markdown("""<style>
+        body, .main { background-color: #1e1e1e; color: #f0f0f0; }
+        .step-box { background-color: #2a2a2a; border-left: 4px solid #90C67C; }
+        .highlight { background-color: #444; }
+        .info-box { background-color: #1f3b57; border-left: 6px solid #2196F3; }
+    </style>""", unsafe_allow_html=True)
+else:
+    st.markdown("""<style>
+        body, .main { background-color: #ffffff; color: #000000; }
+        .step-box { background-color: #f0f0f0; border-left: 4px solid #90C67C; }
+        .highlight { background-color: #90C67C; }
+        .info-box { background-color: #e3f2fd; border-left: 6px solid #2196F3; }
+    </style>""", unsafe_allow_html=True)
+
+
     🚀 NLP Project: Porter Stemmer Visualization
 </div>
 """, unsafe_allow_html=True)
