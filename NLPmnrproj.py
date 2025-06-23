@@ -11,6 +11,46 @@ st.set_page_config(
     layout="wide"
 )
 
+# === Custom Streamlit UI Enhancements ===
+st.markdown("""
+<style>
+/* Hide default Streamlit elements */
+#MainMenu, header, footer {visibility: hidden;}
+
+/* Custom App Title Header */
+.custom-header {
+    background-color: #143D60;
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Styled button with hover */
+div.stButton > button:first-child {
+    background-color: #90C67C;
+    color: white;
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: none;
+    transition: 0.3s;
+}
+div.stButton > button:first-child:hover {
+    background-color: #5a8e4a;
+    color: #fff;
+}
+</style>
+
+<div class="custom-header">
+    🚀 NLP Project: Porter Stemmer Visualization
+</div>
+""", unsafe_allow_html=True)
+
+
 # Custom CSS to improve the UI
 st.markdown("""
 <style>
