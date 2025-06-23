@@ -47,10 +47,9 @@ div.stButton > button:first-child:hover {
 
 <div class="custom-header">
 
-# Theme toggle selectbox
+# === Theme Toggle ===
 mode = st.selectbox("🌓 Choose Theme", ["🌞 Light", "🌙 Dark"], index=0)
 
-# Dark mode CSS
 if "Dark" in mode:
     st.markdown("""
         <style>
@@ -60,8 +59,6 @@ if "Dark" in mode:
             .info-box { background-color: #1f3b57; border-left: 6px solid #2196F3; }
         </style>
     """, unsafe_allow_html=True)
-
-# Light mode CSS
 else:
     st.markdown("""
         <style>
@@ -72,14 +69,12 @@ else:
         </style>
     """, unsafe_allow_html=True)
 
-# Custom header
+# Safe way to show header without emoji issues
 st.markdown("""
 <div class="custom-header">
     &#128640; NLP Project: Porter Stemmer Visualization
 </div>
 """, unsafe_allow_html=True)
-
-
 
 
 # Custom CSS to improve the UI
