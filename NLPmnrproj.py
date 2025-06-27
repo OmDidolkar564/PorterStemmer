@@ -12,14 +12,17 @@ with st.form("theme_switcher"):
     if submitted:
         st.session_state.theme = "Dark" if st.session_state.theme == "Light" else "Light"
 
-st.markdown("""<style>
-    div[role='form'] {
-        position: absolute;
-        top: 10px;
-        right: 20px;
-        z-index: 1000;
-    }
-</style>""", unsafe_allow_html=True)
+st.markdown("""
+    <style>
+        div[role='form'] {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            z-index: 1000;
+        }
+    </style>
+""", unsafe_allow_html=True)
+
 # === Custom CSS ===
 st.markdown("""
 <style>
